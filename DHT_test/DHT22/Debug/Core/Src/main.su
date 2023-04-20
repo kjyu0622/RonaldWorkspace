@@ -1,0 +1,14 @@
+../Core/Src/main.c:70:6:delay_us	16	static
+../Core/Src/main.c:75:6:Set_Pin_Output	32	static
+../Core/Src/main.c:84:6:Set_Pin_Input	32	static
+../Core/Src/main.c:93:6:DHT22_Init	8	static
+../Core/Src/main.c:110:6:DHT11_Init	8	static
+../Core/Src/main.c:121:9:Check_Response_DHT11	16	static
+../Core/Src/main.c:139:9:DHT11_Read	16	static
+../Core/Src/main.c:160:5:main	32	static
+../Core/Src/main.c:298:6:SystemClock_Config	96	static
+../Core/Src/main.c:346:13:MX_RTC_Init	16	static
+../Core/Src/main.c:404:13:MX_TIM1_Init	32	static
+../Core/Src/main.c:450:13:MX_GPIO_Init	48	static
+../Core/Src/main.c:536:13:MX_FSMC_Init	40	static
+../Core/Src/main.c:600:6:Error_Handler	4	static,ignoring_inline_asm

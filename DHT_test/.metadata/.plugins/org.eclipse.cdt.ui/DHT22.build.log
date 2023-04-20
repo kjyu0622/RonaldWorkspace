@@ -1,0 +1,17 @@
+10:51:50 **** Incremental Build of configuration Debug for project DHT22 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -IC:/Users/yukua/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.4/Drivers/STM32F1xx_HAL_Driver/Inc -IC:/Users/yukua/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.4/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IC:/Users/yukua/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.4/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IC:/Users/yukua/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.4/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DHT22.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\yukua\Desktop\ELEC3300\DHT_test\DHT22\STM32F103VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DHT22.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DHT22.elf
+ 
+arm-none-eabi-size   DHT22.elf 
+arm-none-eabi-objdump -h -S  DHT22.elf  > "DHT22.list"
+   text	   data	    bss	    dec	    hex	filename
+  30960	    484	   1828	  33272	   81f8	DHT22.elf
+Finished building: default.size.stdout
+ 
+Finished building: DHT22.list
+ 
+
+10:51:52 Build Finished. 0 errors, 0 warnings. (took 1s.311ms)
+
